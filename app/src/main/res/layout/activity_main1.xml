@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Main1">
+
+    <!--EditText:Input the recipient-->
+    <EditText
+        android:id="@+id/recipientEt"
+        android:hint="Recipient email(s)"
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--EditText: Input the subject of email-->
+    <EditText
+        android:id="@+id/subjectEt"
+        android:hint="Subject"
+        android:inputType="text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!--EditText: Input the message-->
+    <EditText
+        android:id="@+id/messageEt"
+        android:hint="Message"
+        android:minHeight="150dp"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <!--Button: Launch existing email client to send email-->
+    <Button
+        android:id="@+id/sendEmailBtn"
+        android:text="Send Email"
+        android:layout_gravity="end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
